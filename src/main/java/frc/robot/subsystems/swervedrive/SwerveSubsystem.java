@@ -79,13 +79,13 @@ public class SwerveSubsystem extends SubsystemBase {
         this::getRobotVelocity, // ChassisSpeeds supplier. MUST BE ROBOT RELATIVE
         this::setChassisSpeeds, // Method that will drive the robot given ROBOT RELATIVE ChassisSpeeds
         new HolonomicPathFollowerConfig( // HolonomicPathFollowerConfig, this should likely live in your Constants class
-            new PIDConstants(0, 0.0, 0.0),
+            new PIDConstants(1, 0.0, 0.0),
             // Translation PID constants
-            new PIDConstants(0,
+            new PIDConstants(1.7,
                 0,
                 0),
             // Rotation PID constants
-            4.5,
+            10,
             // Max module speed, in m/s
             swerveDrive.swerveDriveConfiguration.getDriveBaseRadiusMeters(),
             // Drive base radius in meters. Distance from robot center to furthest module.
