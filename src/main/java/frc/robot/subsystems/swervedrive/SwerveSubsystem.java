@@ -81,7 +81,7 @@ public class SwerveSubsystem extends SubsystemBase {
         new HolonomicPathFollowerConfig( // HolonomicPathFollowerConfig, this should likely live in your Constants class
             new PIDConstants(1, 0.0, 0.0),
             // Translation PID constants
-            new PIDConstants(1.7,
+            new PIDConstants(1.5,
                 0,
                 0),
             // Rotation PID constants
